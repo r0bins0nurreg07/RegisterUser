@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "a3f6",
+      "time": "2026-02-02T02:08:36.535Z",
+      "name": "paola Andrea Urrego Goez",
+      "email": "urregopaola@gmail.com",
+      "password": "azvbcjj,"
+    },
+    {
+      "id": "12e7",
+      "time": "2026-02-02T02:08:46.167Z",
+      "name": "Nubia de jesus sepulveda cardona ",
+      "email": "autoromanc1480@jovelcotv.com",
+      "password": "dsafzfzf"
+    },
+    {
+      "id": "c38a",
+      "time": "2026-02-02T02:09:08.583Z",
+      "name": "pedro emilio ",
+      "email": "pedrioemilio@gmail.com",
+      "password": "sdfdghj"
+    }
+  ]
+}

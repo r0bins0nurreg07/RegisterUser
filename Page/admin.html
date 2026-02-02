@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Usuarios - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen p-6">
+
+  <div class="max-w-6xl mx-auto bg-white p-6 rounded-xl shadow-lg">
+
+    <h1 class="text-2xl font-bold mb-6 text-gray-800">
+      Usuarios
+    </h1>
+
+
+    <form class="space-y-4" id="form">
+
+    <!-- BUSCADOR -->
+    <input
+      type="text"
+      id="search"
+      placeholder="Buscar por ID..."
+      class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+
+    <!-- BOTONES CRUD (debajo del buscador) -->
+    <div class="flex flex-wrap gap-3 mb-6">
+      <!-- CREATE -->
+    <button id="create" type="submit"
+    class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+    >
+    Create
+    </button>
+
+      <!-- READ -->
+    <button id="read" type="button"
+        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+      >
+        Read
+    </button>
+
+    <button id="update" type="button"
+        class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+      >
+        Update
+    </button>
+
+    <button id="delete" type="button"
+        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+    >
+    Delete
+    </button>
+
+    <input
+      type="text"
+      id="name"
+      placeholder="Ingresar nombre"
+      class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <input
+      type="text"
+      id="email"
+      placeholder="Ingresar email"
+      class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <input
+      type="text"
+      id="Password"
+      placeholder="Ingresar Password"
+      class="w-full mb-3 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+
+    </form>
+
+    </div>
+
+    <!-- TABLA -->
+    <div class="overflow-x-auto" id="contenttable">
+      <table class="min-w-full border border-gray-300 rounded-lg">
+        <thead class="bg-gray-200">
+          <tr>
+            <th class="border px-4 py-2">ID</th>
+            <th class="border px-4 py-2">Datetime</th>
+            <th class="border px-4 py-2">Nombre</th>
+            <th class="border px-4 py-2">Email</th>
+            <th class="border px-4 py-2">Password</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody" class="text-center"></tbody>
+      </table>
+    </div>
+
+
+  </div>
+
+  <script type="module" src="../Controller/adminController.js"></script>
+
+</body>
+</html>
