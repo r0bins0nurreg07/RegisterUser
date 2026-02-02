@@ -1,5 +1,8 @@
 import { getdata, updateuser } from "../service/serviceUser.js";
 import { adduseradmin, createuserforadmin, deleteuserid } from "../View/adminView.js";
+import{authGuard} from "../Help/authGuard.js"
+
+authGuard();
 
 const btnCreate = document.getElementById("form");
 const btnRead = document.getElementById("read");
